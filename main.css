@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: -10;
+    padding: -10;
+    background-image: url("city.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(100px);
+    animation: backgroundAnimation 10s linear infinite;
+}
+
+.character {
+    position: fixed;
+    bottom: -150px; /* Начальная позиция ниже экрана */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    transition: bottom 0.5s ease; /* Плавный переход */
+}
+
+.character.show {
+    bottom: -35px; /* Конечная позиция, когда персонаж в видимой области */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 10% 10%; / Смещение будет меньшим /
+    }
+    100% {
+        background-position: 0% 0%; / Возвращаемся к начальной точке /
+    }
+}
+
+
+p {
+ color: white
+}
+h1 {
+  color: white
+}
+label {
+  color: white
+}

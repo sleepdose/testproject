@@ -3,7 +3,6 @@ body {
     margin: -10;
     padding: -10;
     background-image: url("city.jpg");
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     backdrop-filter: blur(100px);
